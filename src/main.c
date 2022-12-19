@@ -104,7 +104,7 @@ int main(void)
         NRF_LOG_FLUSH();
 
         hdc1080_start_measurement((float*)&temp,(uint8_t*)&humi);
-        NRF_LOG_INFO("%f C - %d", temp, humi);
+        NRF_LOG_INFO("Temp " NRF_LOG_FLOAT_MARKER "*C Humidity %d%%\r\n", NRF_LOG_FLOAT(temp), humi);
         NRF_LOG_FLUSH();
 
         nrf_delay_ms(500);
