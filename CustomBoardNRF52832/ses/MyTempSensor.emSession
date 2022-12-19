@@ -1,0 +1,85 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <BreakpointListItem trigger="" line="43" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../src/HDC1080.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="58" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../src/HDC1080.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="59" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../src/HDC1080.c" useHWbreakpoint="false"/>
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="MyTempSensor_Debug" sizeText="" addressText="m_twi"/>
+ </Memory1>
+ <Memory2>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="MyTempSensor_Debug" sizeText="" addressText=""/>
+ </Memory2>
+ <Memory3>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="MyTempSensor_Debug" sizeText="" addressText=""/>
+ </Memory3>
+ <Memory4>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="MyTempSensor_Debug" sizeText="" addressText=""/>
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="MyTempSensor"/>
+  <ProjectSessionItem path="MyTempSensor;MyTempSensor"/>
+  <ProjectSessionItem path="MyTempSensor;MyTempSensor;Application"/>
+  <ProjectSessionItem path="MyTempSensor;MyTempSensor;Board Definition"/>
+  <ProjectSessionItem path="MyTempSensor;MyTempSensor;None"/>
+  <ProjectSessionItem path="MyTempSensor;MyTempSensor;nRF_Drivers"/>
+  <ProjectSessionItem path="MyTempSensor;MyTempSensor;nRF_Libraries"/>
+  <ProjectSessionItem path="MyTempSensor;MyTempSensor;nRF_Log"/>
+  <ProjectSessionItem path="MyTempSensor;MyTempSensor;nRF_Segger_RTT"/>
+  <ProjectSessionItem path="MyTempSensor;MyTempSensor;nRF_TWI"/>
+  <ProjectSessionItem path="MyTempSensor;MyTempSensor;Segger Startup Files"/>
+ </Project>
+ <Register1>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal;GPIOTE/TASKS_OUT[0];GPIOTE/TASKS_OUT[1];GPIOTE/TASKS_OUT[2];GPIOTE/TASKS_OUT[3];GPIOTE/TASKS_OUT[4];GPIOTE/TASKS_OUT[5];GPIOTE/TASKS_OUT[6];GPIOTE/TASKS_OUT[7];GPIOTE/TASKS_SET[0];GPIOTE/TASKS_SET[1];GPIOTE/TASKS_SET[2];GPIOTE/TASKS_SET[3];GPIOTE/TASKS_SET[4];GPIOTE/TASKS_SET[5];GPIOTE/TASKS_SET[6];GPIOTE/TASKS_SET[7];GPIOTE/TASKS_CLR[0];GPIOTE/TASKS_CLR[1];GPIOTE/TASKS_CLR[2];GPIOTE/TASKS_CLR[3];GPIOTE/TASKS_CLR[4];GPIOTE/TASKS_CLR[5];GPIOTE/TASKS_CLR[6];GPIOTE/TASKS_CLR[7];GPIOTE/EVENTS_IN[0];GPIOTE/EVENTS_IN[1];GPIOTE/EVENTS_IN[2];GPIOTE/EVENTS_IN[3];GPIOTE/EVENTS_IN[4];GPIOTE/EVENTS_IN[5];GPIOTE/EVENTS_IN[6];GPIOTE/EVENTS_IN[7];GPIOTE/EVENTS_PORT;GPIOTE/INTENSET;GPIOTE/INTENCLR;GPIOTE/CONFIG[0];GPIOTE/CONFIG[1];GPIOTE/CONFIG[2];GPIOTE/CONFIG[3];GPIOTE/CONFIG[4];GPIOTE/CONFIG[5];GPIOTE/CONFIG[6];GPIOTE/CONFIG[7]" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context;GPIOTE/INTENCLR" name="MyTempSensor_Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register1>
+ <Register2>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="MyTempSensor_Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register2>
+ <Register3>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="MyTempSensor_Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register3>
+ <Register4>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="MyTempSensor_Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register4>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never">
+   <Watchpoint expression="_ds1307_m_twi" name="_ds1307_m_twi" radix="-1" linenumber="9" filename="../../src/DS1307.c"/>
+   <Watchpoint expression="m_twi" name="m_twi" radix="-1" linenumber="9" filename="../../src/DS1307.c"/>
+   <Watchpoint expression="m_xfer_done" name="m_xfer_done" radix="-1" linenumber="81" filename="../../src/HDC1080.c"/>
+  </Watches>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/DS1307.c" path="../../src/DS1307.h" left="0" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="47" y="46" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/main.c" path="../../src/DS1307.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="62" y="8" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/HDC1080.c" path="../../src/HDC1080.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="86" useTextEdit="1" path="../../src/HDC1080.c" left="0" top="58" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="24" useTextEdit="1" path="../../src/main.h" left="0" top="4" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="49" useTextEdit="1" path="../../src/main.c" left="0" top="48" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="41" y="51" useTextEdit="1" path="MyTempSensor.emProject" left="0" top="45" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="334" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/HDC1080.c" path="C:/Nordic/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy/nrf_drv_twi.h" left="0" top="321" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="77" y="78" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/HDC1080.c" path="C:/Nordic/nRF5_SDK_17.1.0_ddde560/components/drivers_nrf/nrf_soc_nosd/nrf_error.h" left="0" top="64" codecName="Default"/>
+ </Files>
+ <EMStudioWindow activeProject="MyTempSensor" fileDialogDefaultFilter="*.asm;*.s;*.inc" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="C:/Nordic/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/ses_startup_nrf52.s&#xa;&#xa;C:/Nordic/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/ses_startup_nrf_common.s&#xa;&#xa;C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 7.10/source/thumb_crt0.s&#xa;" fileDialogInitialDirectory="C:/Users/User/Documents/Nordic/MyTempSensor/src" debugSearchPath="" autoConnectCapabilities="3199"/>
+</session>
