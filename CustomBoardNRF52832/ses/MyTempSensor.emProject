@@ -55,6 +55,20 @@
       <file file_name="../../src/main.h" />
       <file file_name="../config/sdk_config.h" />
     </folder>
+        <folder Name="SSD1306">
+      <file file_name="../../src/SSD1306.c" />
+      <file file_name="../../src/SSD1306.h" />
+      <file file_name="../../src/SSD1306_fonts.c" />
+      <file file_name="../../src/SSD1306_fonts.h" />
+      <file file_name="../../src/SSD1306_conf.h" />
+    </folder>
+    <folder Name="For SES">
+    <file file_name="../../SES/_ansi.h" />
+    <file file_name="../../SES/config.h" />
+    <file file_name="../../SES/ieeefp.h" />
+    <file file_name="../../SES/features.h" />
+    <file file_name="../../SES/_newlib_version.h" />
+    </folder>
     <folder Name="Board Definition">
       <file file_name="C:/Nordic/nRF5_SDK_17.1.0_ddde560/components/boards/boards.c" />
     </folder>

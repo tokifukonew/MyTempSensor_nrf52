@@ -40,6 +40,9 @@ SRC_FILES += \
   $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_twi.c \
   $(PROJ_DIR)/src/DS1307.c \
   $(PROJ_DIR)/src/HDC1080.c \
+  $(PROJ_DIR)/src/SSD1306.c \
+  $(PROJ_DIR)/src/SSD1306_fonts.c \
+  $(PROJ_DIR)/src/SSD1306_tests.c \
 
 # Include folders common to all targets
 INC_FOLDERS += \

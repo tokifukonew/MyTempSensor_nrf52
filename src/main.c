@@ -1,24 +1,22 @@
 #include "main.h"
 
-
-void twi_init (void)
+void twi_init(void)
 {
     ret_code_t err_code;
 
     const nrf_drv_twi_config_t twi_config = {
-       .scl                = SCL_PIN_NUMBER,
-       .sda                = SDA_PIN_NUMBER,
-       .frequency          = NRF_DRV_TWI_FREQ_100K,
-       .interrupt_priority = APP_IRQ_PRIORITY_HIGH,
-       .clear_bus_init     = false
-    };
+        .scl = SCL_PIN_NUMBER,
+        .sda = SDA_PIN_NUMBER,
+        .frequency = NRF_DRV_TWI_FREQ_100K,
+        .interrupt_priority = APP_IRQ_PRIORITY_HIGH,
+        .clear_bus_init = false};
 
     err_code = nrf_drv_twi_init(&m_twi, &twi_config, NULL, NULL);
     APP_ERROR_CHECK(err_code);
     nrf_drv_twi_enable(&m_twi);
 }
 
-void twi_scanner (void)
+void twi_scanner(void)
 {
     ret_code_t err_code;
     uint8_t address;
@@ -45,7 +43,6 @@ void twi_scanner (void)
     }
 }
 
-
 int main(void)
 {
     ret_code_t err_code;
@@ -56,7 +53,6 @@ int main(void)
 
     twi_init();
     twi_scanner();
-
 
     DS1307_Init(&m_twi);
     /*
@@ -72,41 +68,69 @@ int main(void)
     volatile float temp;
     volatile uint8_t humi;
 
-    hdc1080_init(&m_twi, Temperature_Resolution_14_bit,Humidity_Resolution_14_bit);
-    
+    hdc1080_init(&m_twi, Temperature_Resolution_14_bit, Humidity_Resolution_14_bit);
+
     uint8_t date = DS1307_GetDate();
     uint8_t month = DS1307_GetMonth();
     uint16_t year = DS1307_GetYear();
-    //uint8_t dow = DS1307_GetDayOfWeek();
+    // uint8_t dow = DS1307_GetDayOfWeek();
     uint8_t hour = DS1307_GetHour();
     uint8_t minute = DS1307_GetMinute();
     uint8_t second = DS1307_GetSecond();
-    //int8_t zone_hr = DS1307_GetTimeZoneHour();
-    //uint8_t zone_min = DS1307_GetTimeZoneMin();
-    
+    // int8_t zone_hr = DS1307_GetTimeZoneHour();
+    // uint8_t zone_min = DS1307_GetTimeZoneMin();
+    ssd1306_twi_Init(&m_twi);
     while (true)
     {
         NRF_LOG_INFO("LED toggle!");
         NRF_LOG_FLUSH();
         nrf_gpio_pin_toggle(LED_1);
 
-
-	date = DS1307_GetDate();
-	month = DS1307_GetMonth();
-	year = DS1307_GetYear();
-	//dow = DS1307_GetDayOfWeek();
-	hour = DS1307_GetHour();
-	minute = DS1307_GetMinute();
-	second = DS1307_GetSecond();
-	//zone_hr = DS1307_GetTimeZoneHour();
-	//zone_min = DS1307_GetTimeZoneMin();
+        date = DS1307_GetDate();
+        month = DS1307_GetMonth();
+        year = DS1307_GetYear();
+        // dow = DS1307_GetDayOfWeek();
+        hour = DS1307_GetHour();
+        minute = DS1307_GetMinute();
+        second = DS1307_GetSecond();
+        // zone_hr = DS1307_GetTimeZoneHour();
+        // zone_min = DS1307_GetTimeZoneMin();
         NRF_LOG_INFO("%04d-%02d-%02d %02d:%02d:%02d%", year, month, date, hour, minute, second);
         NRF_LOG_FLUSH();
 
-        hdc1080_start_measurement((float*)&temp,(uint8_t*)&humi);
+        hdc1080_start_measurement((float *)&temp, (uint8_t *)&humi);
         NRF_LOG_INFO("Temp " NRF_LOG_FLOAT_MARKER "*C Humidity %d%%\r\n", NRF_LOG_FLOAT(temp), humi);
         NRF_LOG_FLUSH();
 
+        nrf_delay_ms(500);
+        // ssd1306_TestAll();
+
+        ssd1306_SetCursor(2, 0);
+        char s1[16];
+        snprintf(s1, 16, "Temp " NRF_LOG_FLOAT_MARKER, NRF_LOG_FLOAT(temp));
+        ssd1306_WriteString(s1, Font_6x8, White);
+        ssd1306_SetCursor(60, 0);
+        ssd1306_WriteString(" C", Font_6x8, White);
+
+        ssd1306_SetCursor(2, 12);
+        char s2[16];
+        snprintf(s2, 16, "Humidity %d%%", humi);
+        ssd1306_WriteString(s2, Font_6x8, White);
+
+        ssd1306_SetCursor(2, 24);
+        char s3[16];
+        sprintf(s3, "%02d:%02d:%02d%", hour, minute, second);
+        ssd1306_WriteString(s3, Font_6x8, White);
+
+        ssd1306_SetCursor(2, 36);
+        char s4[16];
+        sprintf(s4, "%04d-%02d-%02d", year, month, date);
+        ssd1306_WriteString(s4, Font_6x8, White);
+
+        ssd1306_SetCursor(2, 48);
+        ssd1306_WriteString("Hello, Zhenia!", Font_6x8, White);
+
+        ssd1306_UpdateScreen();
         nrf_delay_ms(500);
     }
 }

@@ -64,14 +64,10 @@ void hdc1080_init(nrf_drv_twi_t *m_twi, Temp_Reso Temperature_Resolution_x_bit, 
   err_code = nrf_drv_twi_tx(_hdc1080_m_twi, HDC_1080_ADD, buffer, 2 + 1, true);
   if (err_code == NRF_SUCCESS)
   {
-    NRF_LOG_INFO("Device Address and Register Address and Data sent");
+    //NRF_LOG_INFO("Device Address and Register Address and Data sent");
   }
   NRF_LOG_FLUSH();
-  if (NRF_SUCCESS == err_code)
-  {
-    err_code = nrf_drv_twi_tx(_hdc1080_m_twi, HDC_1080_ADD, buffer, 2 + 1, true);
-  }
-  nrf_delay_ms(100);
+  nrf_delay_ms(1);
 }
 
 /**

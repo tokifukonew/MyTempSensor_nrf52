@@ -28,13 +28,9 @@
   <ProjectSessionItem path="MyTempSensor;MyTempSensor"/>
   <ProjectSessionItem path="MyTempSensor;MyTempSensor;Application"/>
   <ProjectSessionItem path="MyTempSensor;MyTempSensor;Board Definition"/>
-  <ProjectSessionItem path="MyTempSensor;MyTempSensor;None"/>
-  <ProjectSessionItem path="MyTempSensor;MyTempSensor;nRF_Drivers"/>
-  <ProjectSessionItem path="MyTempSensor;MyTempSensor;nRF_Libraries"/>
-  <ProjectSessionItem path="MyTempSensor;MyTempSensor;nRF_Log"/>
+  <ProjectSessionItem path="MyTempSensor;MyTempSensor;For SES"/>
   <ProjectSessionItem path="MyTempSensor;MyTempSensor;nRF_Segger_RTT"/>
-  <ProjectSessionItem path="MyTempSensor;MyTempSensor;nRF_TWI"/>
-  <ProjectSessionItem path="MyTempSensor;MyTempSensor;Segger Startup Files"/>
+  <ProjectSessionItem path="MyTempSensor;MyTempSensor;SSD1306"/>
  </Project>
  <Register1>
   <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal;GPIOTE/TASKS_OUT[0];GPIOTE/TASKS_OUT[1];GPIOTE/TASKS_OUT[2];GPIOTE/TASKS_OUT[3];GPIOTE/TASKS_OUT[4];GPIOTE/TASKS_OUT[5];GPIOTE/TASKS_OUT[6];GPIOTE/TASKS_OUT[7];GPIOTE/TASKS_SET[0];GPIOTE/TASKS_SET[1];GPIOTE/TASKS_SET[2];GPIOTE/TASKS_SET[3];GPIOTE/TASKS_SET[4];GPIOTE/TASKS_SET[5];GPIOTE/TASKS_SET[6];GPIOTE/TASKS_SET[7];GPIOTE/TASKS_CLR[0];GPIOTE/TASKS_CLR[1];GPIOTE/TASKS_CLR[2];GPIOTE/TASKS_CLR[3];GPIOTE/TASKS_CLR[4];GPIOTE/TASKS_CLR[5];GPIOTE/TASKS_CLR[6];GPIOTE/TASKS_CLR[7];GPIOTE/EVENTS_IN[0];GPIOTE/EVENTS_IN[1];GPIOTE/EVENTS_IN[2];GPIOTE/EVENTS_IN[3];GPIOTE/EVENTS_IN[4];GPIOTE/EVENTS_IN[5];GPIOTE/EVENTS_IN[6];GPIOTE/EVENTS_IN[7];GPIOTE/EVENTS_PORT;GPIOTE/INTENSET;GPIOTE/INTENCLR;GPIOTE/CONFIG[0];GPIOTE/CONFIG[1];GPIOTE/CONFIG[2];GPIOTE/CONFIG[3];GPIOTE/CONFIG[4];GPIOTE/CONFIG[5];GPIOTE/CONFIG[6];GPIOTE/CONFIG[7]" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context;GPIOTE/INTENCLR" name="MyTempSensor_Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
@@ -71,15 +67,22 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="13" y="25" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/DS1307.c" path="../../src/DS1307.h" left="0" top="44" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="47" y="46" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/main.c" path="../../src/DS1307.c" left="0" top="15" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="13" y="25" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/DS1307.c" path="../../src/DS1307.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="3" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/main.c" path="../../src/DS1307.c" left="0" top="3" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="62" y="8" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/HDC1080.c" path="../../src/HDC1080.h" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="10" y="55" useTextEdit="1" path="../../src/HDC1080.c" left="0" selected="1" top="49" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="24" useTextEdit="1" path="../../src/main.h" left="0" top="4" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="49" useTextEdit="1" path="../../src/main.c" left="0" top="33" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="41" y="51" useTextEdit="1" path="MyTempSensor.emProject" left="0" top="45" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="334" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/HDC1080.c" path="C:/Nordic/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy/nrf_drv_twi.h" left="0" top="321" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="77" y="78" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/HDC1080.c" path="C:/Nordic/nRF5_SDK_17.1.0_ddde560/components/drivers_nrf/nrf_soc_nosd/nrf_error.h" left="0" top="64" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="2" y="61" useTextEdit="1" path="../../src/HDC1080.c" left="0" top="35" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="14" y="17" useTextEdit="1" path="../../src/main.h" left="0" top="1" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="33" y="25" useTextEdit="1" path="../../src/main.c" left="0" top="23" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="6" useTextEdit="1" folds0="2,6" path="MyTempSensor.emProject" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="334" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/HDC1080.c" path="C:/Nordic/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy/nrf_drv_twi.h" left="0" top="310" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="77" y="78" useTextEdit="1" openedFrom="C:/Users/User/Documents/Nordic/MyTempSensor/src/HDC1080.c" path="C:/Nordic/nRF5_SDK_17.1.0_ddde560/components/drivers_nrf/nrf_soc_nosd/nrf_error.h" left="0" top="58" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="10" useTextEdit="1" path="../../src/SSD1306.h" left="0" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../config/sdk_config.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../src/SSD1306.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="C:/Nordic/nRF5_SDK_17.1.0_ddde560/external/segger_rtt/SEGGER_RTT_printf.c" left="0" top="222" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="179" useTextEdit="1" path="C:/Nordic/nRF5_SDK_17.1.0_ddde560/external/segger_rtt/SEGGER_RTT.c" left="0" top="177" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="1" useTextEdit="1" path="C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include/sys/stdio.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="158" useTextEdit="1" path="C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include/sys/_types.h" left="0" top="147" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="MyTempSensor" fileDialogDefaultFilter="*.asm;*.s;*.inc" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="C:/Nordic/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/ses_startup_nrf52.s&#xa;&#xa;C:/Nordic/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/ses_startup_nrf_common.s&#xa;&#xa;C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 7.10/source/thumb_crt0.s&#xa;" fileDialogInitialDirectory="C:/Users/User/Documents/Nordic/MyTempSensor/src" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <EMStudioWindow activeProject="MyTempSensor" fileDialogDefaultFilter="*.asm;*.s;*.inc" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="C:/Nordic/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/ses_startup_nrf52.s&#xa;&#xa;C:/Nordic/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/ses_startup_nrf_common.s&#xa;&#xa;C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 7.10/source/thumb_crt0.s&#xa;" fileDialogInitialDirectory="C:/Users/User/Documents/Nordic/MyTempSensor/src" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

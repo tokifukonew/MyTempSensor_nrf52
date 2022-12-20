@@ -14,6 +14,8 @@
 #include "nrf_drv_twi.h"
 
 #include "DS1307.h"  
+#include "HDC1080.h"
+#include "SSD1306.h"
 
 #define TWI_INSTANCE_ID     0
 #define TWI_ADDRESSES      127
@@ -28,7 +30,6 @@
 #define DS1307_MONTH (0x05)
 #define DS1307_YEAR (0x06)
 
-#include "HDC1080.h"
 
 static nrf_drv_twi_t m_twi = NRF_DRV_TWI_INSTANCE(TWI_INSTANCE_ID);
 
