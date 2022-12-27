@@ -644,4 +644,5 @@ uint8_t ssd1306_GetDisplayOn()
 void ssd1306_twi_Init(nrf_drv_twi_t *m_twi)
 {
     _ssd1306_m_twi = m_twi;
+    ssd1306_Init();
 }
