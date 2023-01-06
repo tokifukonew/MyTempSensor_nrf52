@@ -2,7 +2,7 @@ PROJECT_NAME     := MyTempSensor
 TARGETS          := nrf52832_xxaa
 OUTPUT_DIRECTORY := _build
 
-SDK_ROOT := C:/Nordic/nRF5_SDK_17.1.0_ddde560
+SDK_ROOT := D:/Nordic/nRF5_SDK_17.1.0_ddde560
 PROJ_DIR := ../..
 
 $(OUTPUT_DIRECTORY)/nrf52832_xxaa.out: \
@@ -52,7 +52,6 @@ SRC_FILES += \
   $(SDK_ROOT)/modules/nrfx/drivers/src/prs/nrfx_prs.c \
   $(SDK_ROOT)/components/libraries/bsp/bsp.c \
   $(SDK_ROOT)/components/libraries/bsp/bsp_btn_ble.c \
-  $(PROJ_DIR)/src/main.c \
   $(SDK_ROOT)/external/segger_rtt/SEGGER_RTT.c \
   $(SDK_ROOT)/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c \
   $(SDK_ROOT)/external/segger_rtt/SEGGER_RTT_printf.c \
@@ -90,6 +89,8 @@ SRC_FILES += \
   $(PROJ_DIR)/src/SSD1306.c \
   $(PROJ_DIR)/src/SSD1306_fonts.c \
   $(PROJ_DIR)/src/SSD1306_tests.c \
+  $(PROJ_DIR)/src/ble_cus.c \
+  $(PROJ_DIR)/src/main.c \
 
 # Include folders common to all targets
 INC_FOLDERS += \
